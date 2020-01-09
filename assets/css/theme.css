@@ -7390,3 +7390,116 @@ header .button.shadow-none.white-btn.try-bc-btn {
     background-color: #fff;
     color: #052883;
 }
+
+footer.footer {
+    position: relative;
+    width: 100vw;
+    padding: 20px 8vw;
+    background-color: #194ac6;
+}
+
+footer .footer-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+footer .footer-logo-wrapper {
+    margin-right: 6vw;
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+footer .powered-text {
+    margin-bottom: 5px;
+}
+
+footer img.bridge-logo {
+    height: 40px;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    border: 0;
+}
+
+footer .footer-links-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 45vw;
+    margin-bottom: 0px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
+}
+
+footer .footer-li {
+    width: 25%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 0.9vw;
+    line-height: 1.5vw;
+    font-weight: 200;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .visit-on-text {
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 0.9vw;
+    line-height: 1.5vw;
+    font-weight: 200;
+}
+
+footer .social-links {
+    margin-top: 15px;
+}
+
+footer .single-social-link.first {
+    margin-left: 0px;
+}
+
+footer .single-social-link {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+footer .single-social-link.last {
+    margin-right: 0px;
+}
+
+footer .social-img {
+    height: 24px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    footer .footer-li .footer-link {
+        background-image: linear-gradient(to bottom, currentColor 25%, transparent 25%);
+        background-repeat: no-repeat;
+        background-size: 0% 3px;
+        background-position-x: right;
+        background-position-y: bottom;
+        padding-bottom: 3px;
+        transition: background-size 0.3s, filter .6s, color .6s, opacity .6s !important;
+    }
+
+    footer .footer-li:hover .footer-link {
+        background-position-x: left;
+        background-size: 100% 3px;
+    }
+}
