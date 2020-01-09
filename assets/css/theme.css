@@ -7398,6 +7398,9 @@ footer.footer {
     width: 100vw;
     padding: 20px 8vw;
     background-color: #194ac6;
+    left: -350px;
+    z-index: 999;
+    top: 26px;
 }
 
 footer .footer-container {
