@@ -7537,7 +7537,7 @@ footer .social-img {
 }
 
 .dropdown.open .dropdown-title::after {
-    transform: rotate(-180deg) translateY(-40%);
+    transform: rotate(-180deg) translateY(40%);
 }
 
 .dropdown-content {
