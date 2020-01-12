@@ -7526,19 +7526,18 @@ footer .social-img {
     position: absolute;
     top: 50%;
     left: 5px;
-    background: url(https://bridgecrew.io/wp-content/themes/bridgecrew/assets/images/right.png);
+    background: url("../img/arrow.svg");
     width: 10px;
     height: 10px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transform: rotate(90deg) translateX(-50%);
-    /* transition: transform .6s ease; */
+    transform: translateY(-50%);
+    transition: transform .6s ease;
 }
 
 .dropdown.open .dropdown-title::after {
-    transform: rotate(270deg) translateY(-50%) translateX(20%);
-    left: 10px;
+    transform: rotate(-90deg) translateY(-50%);
 }
 
 .dropdown-content {
