@@ -7539,7 +7539,7 @@ nav ul li.current ul {
 }
 
 header i {
-    display: none;
+    display: none !important;
 }
 
 @media screen and (max-width: 1024px) {
@@ -7571,6 +7571,47 @@ header i {
     }
 
     header i {
-        display: block;
+        display: block !important;
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    footer.footer {
+        left: -27px;  
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    footer .footer-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    footer .footer-logo-wrapper {
+        margin-right: 0vw;
+    }
+
+    footer .footer-nav {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1;
+        border-bottom: 1px solid hsla(0, 0%, 100%, 0.75);
+    }
+
+    .footer-visit-on {
+        margin-bottom: 20px;
     }
 }
