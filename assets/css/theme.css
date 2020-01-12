@@ -7529,3 +7529,10 @@ footer .social-img {
 nav ul li.current ul {
     padding: 0 10px;
 }
+
+.wy-nav-content .rst-content {
+    min-height: calc(100vh - 130px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

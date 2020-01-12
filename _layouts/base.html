@@ -55,10 +55,12 @@
       {%- comment %} PAGE CONTENT {% endcomment %}
       <div class="wy-nav-content">
         <div class="rst-content">
-          {% include breadcrumbs.html %}
-          <div role="main">
-            <div class="section">
-              {{ content }}
+          <div class="rst-content-container">
+            {% include breadcrumbs.html %}
+            <div role="main">
+              <div class="section">
+                {{ content }}
+              </div>
             </div>
           </div>
           {% include footer.html %}
