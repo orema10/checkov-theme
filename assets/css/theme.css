@@ -7525,3 +7525,7 @@ footer .social-img {
     overflow: hidden;
     transition: height .6s ease;
 }
+
+nav ul li.current ul {
+    padding: 0 10px;
+}
