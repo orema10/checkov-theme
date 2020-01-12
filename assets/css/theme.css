@@ -6068,7 +6068,7 @@ article ol li ul li {
 }
 
 .wy-menu-vertical li.toctree-l3.current>a {
-    background: #bdbdbd;
+    /* background: #bdbdbd; */
     padding: .4045em 4.045em
 }
 
