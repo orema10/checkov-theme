@@ -5943,7 +5943,7 @@ article ol li ul li {
     height: 32px;
     display: inline-block;
     line-height: 32px;
-    padding: 0 1.618em;
+    padding: 0 35px;
     margin-bottom: 0;
     display: block;
     font-weight: normal;
@@ -7525,7 +7525,7 @@ footer .social-img {
     content: "";
     position: absolute;
     top: 50%;
-    left: 5px;
+    left: 20px;
     background: url("../img/arrow.svg");
     width: 10px;
     height: 10px;
@@ -7537,7 +7537,7 @@ footer .social-img {
 }
 
 .dropdown.open .dropdown-title::after {
-    transform: rotate(-90deg) translateY(-50%);
+    transform: rotate(-180deg) translateY(-40%);
 }
 
 .dropdown-content {
