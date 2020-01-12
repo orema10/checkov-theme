@@ -7521,6 +7521,26 @@ footer .social-img {
     position: relative;
 }
 
+.dropdown-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    background: url(https://bridgecrew.io/wp-content/themes/bridgecrew/assets/images/right.png);
+    width: 10px;
+    height: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(90deg) translateX(-50%);
+    /* transition: transform .6s ease; */
+}
+
+.dropdown.open .dropdown-title::after {
+    transform: rotate(270deg) translateY(-50%) translateX(20%);
+    left: 10px;
+}
+
 .dropdown-content {
     height: 0px;
     overflow: hidden;
