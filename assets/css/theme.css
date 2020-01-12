@@ -5946,10 +5946,10 @@ article ol li ul li {
     padding: 0 1.618em;
     margin-bottom: 0;
     display: block;
-    font-weight: bold;
+    font-weight: normal;
     text-transform: uppercase;
     font-size: 80%;
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 .wy-menu-vertical ul {
@@ -5968,9 +5968,9 @@ article ol li ul li {
     background: #e3e3e3;
 } */
 
-.wy-menu-vertical li.current a {
+.wy-menu-vertical li a {
     /* color: gray; */
-    border-right: solid 1px #c9c9c9;
+    /* border-right: solid 1px #c9c9c9; */
     padding: .4045em 2.427em
 }
 
@@ -6000,12 +6000,12 @@ article ol li ul li {
 .wy-menu-vertical li.on a,
 .wy-menu-vertical li.current>a {
     color: #fff;
-    padding: .4045em 1.618em;
-    font-weight: bold;
+    /* padding: .4045em 1.618em; */
+    font-weight: normal;
     position: relative;
     /* background: #fcfcfc; */
     border: none;
-    padding-left: 1.618em -4px
+    /* padding-left: 1.618em -4px; */
 }
 
 .wy-menu-vertical li.on a:hover,
@@ -6047,15 +6047,12 @@ article ol li ul li {
     display: block
 }
 
-.wy-menu-vertical li.toctree-l2.current>a {
-    background: #c9c9c9;
-    padding: .4045em 2.427em
-}
+
 
 .wy-menu-vertical li.toctree-l2.current li.toctree-l3>a {
     display: block;
-    background: #c9c9c9;
-    padding: .4045em 4.045em
+    /* background: #c9c9c9; */
+    padding: .4045em 4.045em;
 }
 
 .wy-menu-vertical li.toctree-l2 a:hover span.toctree-expand {
