@@ -7547,6 +7547,16 @@ header i {
         padding: 11.6px 62.5px;
     }
 
+    h1 {
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
     header .btns-container {
         display: none;
     }
@@ -7611,7 +7621,37 @@ header i {
         border-bottom: 1px solid hsla(0, 0%, 100%, 0.75);
     }
 
-    .footer-visit-on {
+    footer .footer-visit-on {
         margin-bottom: 20px;
+    }
+
+    footer .visit-on-text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    footer .social-img {
+        height: 16px;
+    }
+
+    footer .footer-links-list {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    footer .footer-li {
+        width: 50%;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: left;
+    }
+
+    footer .powered-text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    footer .bridge-logo {
+        height: 20px;
     }
 }
