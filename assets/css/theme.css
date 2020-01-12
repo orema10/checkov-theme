@@ -5668,12 +5668,14 @@ p {
 }
 
 h1 {
-    font-size: 175%
+    font-size: 60px;
+    line-height: 73px;
 }
 
 h2,
 .rst-content .toctree-wrapper p.caption {
-    font-size: 150%
+    font-size: 25px;
+    font-weight: 500;
 }
 
 h3 {
@@ -5929,6 +5931,13 @@ article ol li ul li {
     width: 300px
 }
 
+.wy-menu-vertical ul:first-child li a {
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: .5px;
+    font-weight: 700;
+}
+
 .wy-menu-vertical header,
 .wy-menu-vertical p.caption {
     height: 32px;
@@ -6110,8 +6119,9 @@ article ol li ul li {
 }
 
 .wy-menu-vertical a:hover {
-    background-color: #4e4a4a;
-    cursor: pointer
+    background-color: #fff;
+    cursor: pointer;
+    color: #102971 !important;
 }
 
 .wy-menu-vertical a:hover span.toctree-expand {
@@ -6205,11 +6215,6 @@ article ol li ul li {
 
 .wy-nav .wy-menu-vertical a {
     color: #b3b3b3
-}
-
-.wy-nav .wy-menu-vertical a:hover {
-    background-color: #2980B9;
-    color: #fff
 }
 
 [data-menu-wrap] {
