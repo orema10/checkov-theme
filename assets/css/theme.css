@@ -7659,7 +7659,7 @@ header i {
         text-align: center;
     }
 
-    footer .bridge-logo {
+    footer img.bridge-logo {
         height: 20px;
     }
 
@@ -7669,5 +7669,10 @@ header i {
 
     .wy-side-nav-search input[type=text] {
         padding: 8px 0 8px 15px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 18px;
     }
 }
