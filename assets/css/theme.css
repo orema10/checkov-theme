@@ -5931,13 +5931,18 @@ article ol li ul li {
     width: 300px
 }
 
-.wy-menu-vertical ul:first-child li a {
+.wy-menu-vertical > ul:first-child li a {
     font-size: 20px;
     line-height: 25px;
     letter-spacing: .5px;
     font-weight: 700;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.wy-menu-vertical > ul:first-child li a:hover {
+    background-color: #102971 !important;
+    color: #fff !important;
 }
 
 .wy-menu-vertical header,
@@ -7516,4 +7521,14 @@ footer .social-img {
         background-position-x: left;
         background-size: 100% 3px;
     }
+}
+
+.dropdown-title {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    height: 0px;
+    overflow: hidden;
+    transition: height .6s ease;
 }
