@@ -7538,8 +7538,39 @@ nav ul li.current ul {
     justify-content: space-between;
 }
 
+header i {
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
-    header, footer {
+    header.header {
+        padding: 11.6px 62.5px;
+    }
+
+    header .btns-container {
         display: none;
+    }
+
+    header .header-container {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    header .image {
+        height: 25px;
+    }
+
+    .wy-grid-for-nav {
+        padding-top: 50px;
+    }
+
+    .wy-nav-side {
+        top: 50px;
+    }
+
+    header i {
+        display: block;
     }
 }
