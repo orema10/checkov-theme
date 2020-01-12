@@ -6430,7 +6430,7 @@ footer span.commit .rst-content tt,
     }
 
     .wy-nav-side {
-        left: -300px
+        left: -100vw;
     }
 
     .wy-nav-side.shift {
@@ -7579,6 +7579,7 @@ header i {
     .wy-nav-side {
         top: 50px;
         transition: left .6s ease;
+        z-index: 9999;
     }
 
     .wy-nav-side.open {
@@ -7660,5 +7661,13 @@ header i {
 
     footer .bridge-logo {
         height: 20px;
+    }
+
+    .wy-nav-side {
+        width: 100vw;
+    }
+
+    .wy-side-nav-search input[type=text] {
+        padding: 8px 0 8px 15px;
     }
 }
