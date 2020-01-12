@@ -7382,7 +7382,7 @@ header .button.shadow-none.white-btn {
 }
 
 header .button.shadow-none.white-btn.try-bc-btn {
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 .button:hover {
@@ -7628,6 +7628,7 @@ header i {
     footer .visit-on-text {
         font-size: 14px;
         line-height: 17px;
+        text-align: center;
     }
 
     footer .social-img {
@@ -7649,6 +7650,7 @@ header i {
     footer .powered-text {
         font-size: 14px;
         line-height: 17px;
+        text-align: center;
     }
 
     footer .bridge-logo {
