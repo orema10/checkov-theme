@@ -7578,6 +7578,11 @@ header i {
 
     .wy-nav-side {
         top: 50px;
+        transition: left .6s ease;
+    }
+
+    .wy-nav-side.open {
+        left: 0;
     }
 
     header i {

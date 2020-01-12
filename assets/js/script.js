@@ -22,3 +22,18 @@ if(elDropdowns.length > 0) {
         })
     })
 }
+
+var elHeaderDataToggle = document.querySelector('header i');
+if(elHeaderDataToggle) {
+    elHeaderDataToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        var elNavSide = document.querySelector('.wy-nav-side');
+        if(elNavSide) {
+            if(elNavSide.classList.contains('open')) {
+                elNavSide.classList.remove('open');
+            } else {
+                elNavSide.classList.add('open');
+            }
+        }
+    })
+}
