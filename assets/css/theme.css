@@ -5668,8 +5668,8 @@ p {
 }
 
 h1 {
-    font-size: 60px;
-    line-height: 73px;
+    font-size: 45px;
+    line-height: 50px;
 }
 
 h2,
@@ -5932,10 +5932,12 @@ article ol li ul li {
 }
 
 .wy-menu-vertical ul:first-child li a {
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 25px;
     letter-spacing: .5px;
     font-weight: 700;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .wy-menu-vertical header,
@@ -5971,7 +5973,7 @@ article ol li ul li {
 .wy-menu-vertical li a {
     /* color: gray; */
     /* border-right: solid 1px #c9c9c9; */
-    padding: .4045em 2.427em
+    padding: .4045em 35px;
 }
 
 /* .wy-menu-vertical li.current a:hover {
@@ -6108,7 +6110,7 @@ article ol li ul li {
 .wy-menu-vertical a {
     display: inline-block;
     line-height: 18px;
-    padding: .4045em 1.618em;
+    padding: .4045em 20px;
     display: block;
     position: relative;
     font-size: 90%;
