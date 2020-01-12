@@ -4,6 +4,10 @@ console.log('Script Loaded!');
 var elDropdowns = document.querySelectorAll('nav .dropdown');
 if(elDropdowns.length > 0) {
     elDropdowns.forEach(function(dropdown) {
+        if(dropdown.querySelector('.current')) {
+            dropdown.style.height = 'auto';
+            dropdown.classList.add('open');
+        }
         dropdown.querySelector('.dropdown-title').addEventListener('click', function(e) {
             e.preventDefault();
             var elDropdownContent = dropdown.querySelector('.dropdown-content');

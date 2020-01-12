@@ -7315,7 +7315,7 @@ header.header {
     bottom: auto;
     z-index: 10;
     width: 100vw;
-    padding: 20px 6vw;
+    padding: 20px 62.5px;
     background: #fff;
     z-index: 999;
     -webkit-transition: background-color 500ms ease;
@@ -7410,8 +7410,8 @@ header .button.shadow-none.white-btn.try-bc-btn {
 footer.footer {
     position: relative;
     width: 100vw;
-    padding: 20px 8vw;
-    background-color: #194ac6;
+    padding: 20px;
+    background-color: #102971;
     left: -350px;
     z-index: 999;
     top: 26px;
