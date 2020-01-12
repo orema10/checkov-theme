@@ -8,6 +8,9 @@
 
 /* sphinx_rtd_theme version 0.4.1 | MIT license */
 /* Built 20180727 10:07 */
+
+@import url("https://use.typekit.net/gvx7gfz.css");
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -5564,13 +5567,15 @@ html {
     overflow-x: hidden
 }
 
+/* Body */
 body {
-    font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
-    font-weight: normal;
-    color: #404040;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 300;
+    color: #fff;
     min-height: 100%;
     overflow-x: hidden;
-    background: #edf0f2
+    background: #fff;
+    font-style: normal;
 }
 
 .wy-text-left {
@@ -5651,8 +5656,8 @@ h5,
 h6,
 legend {
     margin-top: 0;
-    font-weight: 700;
-    font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif
+    font-weight: 300;
+    font-family: sofia-pro, sans-serif;
 }
 
 p {
@@ -5985,23 +5990,23 @@ article ol li ul li {
 
 .wy-menu-vertical li.on a,
 .wy-menu-vertical li.current>a {
-    color: #404040;
+    color: #fff;
     padding: .4045em 1.618em;
     font-weight: bold;
     position: relative;
-    background: #fcfcfc;
+    /* background: #fcfcfc; */
     border: none;
     padding-left: 1.618em -4px
 }
 
 .wy-menu-vertical li.on a:hover,
 .wy-menu-vertical li.current>a:hover {
-    background: #fcfcfc
+    /* background: #fcfcfc */
 }
 
 .wy-menu-vertical li.on a:hover span.toctree-expand,
 .wy-menu-vertical li.current>a:hover span.toctree-expand {
-    color: gray
+    /* color: gray */
 }
 
 .wy-menu-vertical li.on a span.toctree-expand,
@@ -6009,7 +6014,7 @@ article ol li ul li {
     display: block;
     font-size: .8em;
     line-height: 1.6em;
-    color: #333
+    /* color: #333 */
 }
 
 .wy-menu-vertical li.toctree-l1.current>a {
@@ -6256,8 +6261,8 @@ article ol li ul li {
     overflow-x: hidden;
     overflow-y: hidden;
     min-height: calc(100vh - 78px);
-    color: #9b9b9b;
-    background: #343131;
+    color: #fff;
+    background: #102971;
     z-index: 200
 }
 
