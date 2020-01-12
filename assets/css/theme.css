@@ -1368,7 +1368,8 @@ textarea,
 
 .fa-github:before,
 .icon-github:before {
-    content: ""
+    content: "";
+    color: #102971;
 }
 
 .fa-unlock:before {
@@ -5549,22 +5550,14 @@ input[type="checkbox"][disabled] {
 }
 
 a {
-    color: #2980B9;
     text-decoration: none;
-    cursor: pointer
-}
-
-a:hover {
-    color: #3091d1
-}
-
-a:visited {
-    color: #9B59B6
+    cursor: pointer;
+    color: #102971;
 }
 
 html {
     height: 100%;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 /* Body */
