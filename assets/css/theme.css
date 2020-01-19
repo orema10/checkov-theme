@@ -7370,6 +7370,8 @@ header .button {
     line-height: 1;
     text-align: center;
     color: #fff;
+    font-weight: normal;
+    text-decoration: none !important;
 }
 
 header .button.shadow-none {
