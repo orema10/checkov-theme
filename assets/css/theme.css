@@ -7561,6 +7561,14 @@ header i {
     display: none !important;
 }
 
+a {
+    font-weight: 700;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 1024px) {
     header.header {
         padding: 11.6px 62.5px;
