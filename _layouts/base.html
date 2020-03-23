@@ -57,6 +57,7 @@
             </div>
           </div>
           {% include footer.html %}
+            {% include cookieconsent.html %}
         </div>
       </div>
     </section>
@@ -75,7 +76,6 @@
       SphinxRtdTheme.Navigation.enable({{ site.sticky_navigation | default: 'false' }});
     });
   </script>
-  {% include cookieconsent.html %}
   <!-- Build Date: {{ site.time | date: "%Y-%m-%d %H:%M" }} -->
 </body>
 </html>
