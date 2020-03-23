@@ -24,7 +24,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css" />
   {%- endif %}
 
-  {%- if site.google_analytics %}{% include ganalytics.html %}{% endif %}
 </head>
 {% include header.html %}
 <body class="wy-body-for-nav" role="document">
@@ -56,6 +55,7 @@
               </div>
             </div>
           </div>
+          {% include cookieconsent.html %}
           {% include footer.html %}
         </div>
       </div>
