@@ -4278,7 +4278,7 @@ a .icon {
 }
 
 .wy-tray-container li.wy-tray-item-success {
-    background: #27AE60
+    background: #052882
 }
 
 .wy-tray-container li.wy-tray-item-info {
@@ -4342,7 +4342,7 @@ button[disabled] {
     padding: 6px 12px 8px 12px;
     color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #27AE60;
+    background-color: #052882;
     text-decoration: none;
     font-weight: normal;
     font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
@@ -4362,17 +4362,17 @@ button[disabled] {
 }
 
 .btn-hover {
-    background: #2e8ece;
+    background: #409ad5;
     color: #fff
 }
 
 .btn:hover {
-    background: #2cc36b;
+    background: #409ad5;
     color: #fff
 }
 
 .btn:focus {
-    background: #2cc36b;
+    background: #409ad5;
     outline: 0
 }
 
@@ -4446,7 +4446,7 @@ button[disabled] {
 }
 
 .btn-success {
-    background-color: #27AE60 !important
+    background-color: #052882 !important
 }
 
 .btn-success:hover {
@@ -5178,7 +5178,7 @@ input[type="checkbox"][disabled] {
 
 .wy-switch.active:after {
     left: 24px;
-    background: #27AE60
+    background: #052882
 }
 
 .wy-switch.disabled {
@@ -5223,7 +5223,7 @@ input[type="checkbox"][disabled] {
 }
 
 .wy-inline-validate.wy-inline-validate-success .wy-input-context {
-    color: #27AE60
+    color: #052882
 }
 
 .wy-inline-validate.wy-inline-validate-danger .wy-input-context {
@@ -5617,7 +5617,7 @@ a.wy-text-info:hover {
 }
 
 .wy-text-success {
-    color: #27AE60 !important
+    color: #052882 !important
 }
 
 a.wy-text-success:hover {
@@ -6515,7 +6515,7 @@ footer span.commit .rst-content tt,
     text-align: right;
     font-size: 90%;
     cursor: pointer;
-    color: #27AE60;
+    color: #052882;
     *zoom: 1
 }
 
@@ -7185,7 +7185,7 @@ a .rst-content code {
 .rst-content .viewcode-link,
 .rst-content .viewcode-back {
     display: inline-block;
-    color: #27AE60;
+    color: #052882;
     font-size: 80%;
     padding-left: 24px
 }
