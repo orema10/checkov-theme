@@ -65,7 +65,6 @@
 
     </section>
   </div>
-  {% include cookieconsent.html %}
 
   <script>var base_url = '{{ baseurl }}';</script>
   <script src="{{ 'assets/js/jquery-2.1.1.min.js' | absolute_url }}" defer></script>
@@ -81,5 +80,7 @@
   </script>
 
   <!-- Build Date: {{ site.time | date: "%Y-%m-%d %H:%M" }} -->
+  {% include cookieconsent.html %}
+
 </body>
 </html>
