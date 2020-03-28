@@ -3,6 +3,7 @@
 <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en"> <!--<![endif]-->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -70,52 +71,6 @@
                         <div class="section">
                             {{ content }}
                         </div>
-                        <style>
-    #cookie-notice {padding: 0.5rem 1rem; display: none; text-align: left; position: fixed; bottom: 0; width: calc(100% - 2rem); background: #FFFFFF; color: rgba(5,4,130,0.8);z-index:100}
-    #cookie-notice a {display: inline-block; cursor: pointer; margin-left: 0.5rem;}
-    @media (max-width: 767px) {
-        #cookie-notice span {display: block; padding-top: 3px; margin-bottom: 1rem;}
-        #cookie-notice a {position: relative; bottom: 4px;}
-    }
-</style>
-                        <div id="cookie-notice"><span>We would like to use third party cookies and scripts to improve the functionality of this website.</span><a id="cookie-notice-accept" class="btn btn-primary btn-sm">Approve</a><a href="/privacy" class="btn btn-primary btn-sm">More info</a></div>
-                        <script>
-    function createCookie(name,value,days) {
-        var expires = "";
-        if (days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days*24*60*60*1000));
-            expires = "; expires=" + date.toUTCString();
-        }
-        document.cookie = name + "=" + value + expires + "; path=/";
-    }
-    function readCookie(name) {
-        var nameEQ = name + "=";
-        var ca = document.cookie.split(';');
-        for(var i=0;i < ca.length;i++) {
-            var c = ca[i];
-            while (c.charAt(0)==' ') c = c.substring(1,c.length);
-            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-        }
-        return null;
-    }
-    function eraseCookie(name) {
-        createCookie(name,"",-1);
-    }
-
-    if(readCookie('cookie-notice-dismissed')=='true') {
-        {% include ganalytics.html %}
-    } else {
-        document.getElementById('cookie-notice').style.display = 'block';
-    }
-    document.getElementById('cookie-notice-accept').addEventListener("click",function() {
-        createCookie('cookie-notice-dismissed','true',31);
-        document.getElementById('cookie-notice').style.display = 'none';
-        location.reload();
-    });
-
-
-                        </script>
                     </div>
                 </div>
                 {% include footer.html %}
@@ -142,6 +97,70 @@
 </script>
 
 <!-- Build Date: {{ site.time | date: "%Y-%m-%d %H:%M" }} -->
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#edeff5",
+      "text": "#838391"
+    },
+    "button": {
+      "background": "#4b81e8"
+    }
+  },
+  "type": "opt-in",
+  "content": {
+    "href": "https://bridgecrew.io/privacy-policy/"
+  },
+  	onInitialise: function (status) {
+		var type = this.options.type;
+		var didConsent = this.hasConsented();
+		if (type == 'opt-in' && didConsent) {
+			// enable cookies
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', '{{ site.google_analytics }}');
+		}
+		},
 
+		onStatusChange: function(status, chosenBefore) {
+		var type = this.options.type;
+		var didConsent = this.hasConsented();
+		if (type == 'opt-in' && didConsent) {
+			// enable cookies
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', '{{ site.google_analytics }}');
+		}
+		},
+
+		onRevokeChoice: function() {
+		var type = this.options.type;
+		if (type == 'opt-in') {
+			// disable cookies
+				clearCookie('_ga','.mysite.fr','/');
+				clearCookie('_gat_gtag_{{ site.google_analytics }}','.mysite.fr','/');
+				clearCookie('_gid','.mysite.fr','/');
+				// Get an array of cookies
+				var arrSplit = document.cookie.split(";");
+				for(var i = 0; i < arrSplit.length; i++)
+				{
+					var cookie = arrSplit[i].trim();
+					var cookieName = cookie.split("=")[0];
+					// If the prefix of the cookie's name matches the one specified, remove it
+					if(cookieName.indexOf("ssupp.") === 0) {
+						// Remove the cookie
+						document.cookie = cookieName + "=; Max-Age=-99999999;";
+					}
+				}
+			}
+		},
+	}
+	)
+;
+</script>
 </body>
 </html>
