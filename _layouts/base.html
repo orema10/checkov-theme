@@ -1,28 +1,43 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {% if page and page.excerpt %}<meta name="description" content="{{ page.excerpt }}">
-  {% elsif page and page.path == "index.md" %}<meta name="description" content="{{ site.description }}">{% endif %}
-  {% if site.site_author %}<meta name="author" content="{{ site.site_author }}">{% endif %}
-  {% if page and page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if page and page.excerpt %}
+    <meta name="description" content="{{ page.excerpt }}">
+    {% elsif page and page.path == "index.md" %}
+    <meta name="description" content="{{ site.description }}">
+    {% endif %}
+    {% if site.site_author %}
+    <meta name="author" content="{{ site.site_author }}">
+    {% endif %}
+    {% if page and page.canonical_url %}
+    <link rel="canonical" href="{{ page.canonical_url }}">
+    {% endif %}
 
-  {% if config.site_favicon %}<link rel="shortcut icon" href="{{ config.site_favicon | url }}">
-  {% else %}<link rel="shortcut icon" href="{{ 'assets/img/favicon.png' | absolute_url  }}">{% endif %}
+    {% if config.site_favicon %}
+    <link rel="shortcut icon" href="{{ config.site_favicon | url }}">
+    {% else %}
+    <link rel="shortcut icon" href="{{ 'assets/img/favicon.png' | absolute_url  }}">
+    {% endif %}
 
-  <title>{% if page and page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <title>{% if page and page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
-  <link rel="stylesheet" href="{{ 'assets/css/theme.css' | absolute_url }}" />
-  <link rel="stylesheet" href="{{ 'assets/css/theme_extra.css' | absolute_url }}" />
-  {%- if site.hljs_style %}
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/{{site.hljs_style}}.min.css" />
-  {%- else %}
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css" />
-  {%- endif %}
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700"/>
+    <link rel="stylesheet" href="{{ 'assets/css/theme.css' | absolute_url }}"/>
+    <link rel="stylesheet" href="{{ 'assets/css/theme_extra.css' | absolute_url }}"/>
+    {%- if site.hljs_style %}
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/{{site.hljs_style}}.min.css"/>
+    {%- else %}
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css"/>
+    {%- endif %}
 
 </head>
 
@@ -30,59 +45,107 @@
 
 <body class="wy-body-for-nav" role="document">
 
-  <div class="wy-grid-for-nav">
+<div class="wy-grid-for-nav">
 
     {%- comment %} SIDE NAV, TOGGLES ON MOBILE {% endcomment %}
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
-          {% unless site.search_enabled == false %}{% include searchbox.html %}{% endunless %}
-        </div>
+        <div class="wy-side-scroll">
+            <div class="wy-side-nav-search">
+                {% unless site.search_enabled == false %}{% include searchbox.html %}{% endunless %}
+            </div>
 
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          {% include nav.html %}
+            <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                {% include nav.html %}
+            </div>
         </div>
-      </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      {%- comment %} PAGE CONTENT {% endcomment %}
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div class="rst-content-container">
-            {% include breadcrumbs.html %}
-            <div role="main">
-              <div class="section">
-                {{ content }}
-              </div>
-              <div class="cookie">
-              {% include cookieconsent.html %}
-              </div>
+        {%- comment %} PAGE CONTENT {% endcomment %}
+        <div class="wy-nav-content">
+            <div class="rst-content">
+                <div class="rst-content-container">
+                    {% include breadcrumbs.html %}
+                    <div role="main">
+                        <div class="section">
+                            {{ content }}
+                        </div>
+                        <style>
+    #cookie-notice {padding: 0.5rem 1rem; display: none; text-align: center; position: fixed; bottom: 0; width: calc(100% - 2rem); background: #222; color: rgba(255,255,255,0.8);}
+    #cookie-notice a {display: inline-block; cursor: pointer; margin-left: 0.5rem;}
+    @media (max-width: 767px) {
+        #cookie-notice span {display: block; padding-top: 3px; margin-bottom: 1rem;}
+        #cookie-notice a {position: relative; bottom: 4px;}
+    }
+
+                        </style>
+                        <div id="cookie-notice"><span>We would like to use third party cookies and scripts to improve the functionality of this website.</span><a
+                                id="cookie-notice-accept" class="btn btn-primary btn-sm">Approve</a><a href="/privacy"
+                                                                                                       class="btn btn-primary btn-sm">More
+                            info</a></div>
+                        <script>
+    function createCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+    function eraseCookie(name) {
+        createCookie(name,"",-1);
+    }
+
+    if(readCookie('cookie-notice-dismissed')=='true') {
+        {% ganalytics.html %}
+    } else {
+        document.getElementById('cookie-notice').style.display = 'block';
+    }
+    document.getElementById('cookie-notice-accept').addEventListener("click",function() {
+        createCookie('cookie-notice-dismissed','true',31);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+
+
+                        </script>
+                    </div>
+                </div>
+                {% include footer.html %}
+
             </div>
-          </div>
-          {% include footer.html %}
 
         </div>
 
-      </div>
-
     </section>
-  </div>
+</div>
 
-  <script>var base_url = '{{ baseurl }}';</script>
-  <script src="{{ 'assets/js/jquery-2.1.1.min.js' | absolute_url }}" defer></script>
-  <script src="{{ 'assets/js/modernizr-2.8.3.min.js' | absolute_url }}" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script src="{{ 'assets/js/theme.js' | absolute_url }}" defer></script>
-  <script src="{{ 'assets/js/script.js' | absolute_url }}" defer></script>
-  <script type="text/javascript" defer>
+<script>var base_url = '{{ baseurl }}';</script>
+<script src="{{ 'assets/js/jquery-2.1.1.min.js' | absolute_url }}" defer></script>
+<script src="{{ 'assets/js/modernizr-2.8.3.min.js' | absolute_url }}" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="{{ 'assets/js/theme.js' | absolute_url }}" defer></script>
+<script src="{{ 'assets/js/script.js' | absolute_url }}" defer></script>
+<script type="text/javascript" defer>
     hljs.initHighlightingOnLoad();
     window.addEventListener('load', function() {
       SphinxRtdTheme.Navigation.enable({{ site.sticky_navigation | default: 'false' }});
     });
-  </script>
 
-  <!-- Build Date: {{ site.time | date: "%Y-%m-%d %H:%M" }} -->
+</script>
+
+<!-- Build Date: {{ site.time | date: "%Y-%m-%d %H:%M" }} -->
 
 </body>
 </html>
