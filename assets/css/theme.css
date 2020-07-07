@@ -4278,7 +4278,7 @@ a .icon {
 }
 
 .wy-tray-container li.wy-tray-item-success {
-    background: #27AE60
+    background: #052882
 }
 
 .wy-tray-container li.wy-tray-item-info {
@@ -4342,7 +4342,7 @@ button[disabled] {
     padding: 6px 12px 8px 12px;
     color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #27AE60;
+    background-color: #052882;
     text-decoration: none;
     font-weight: normal;
     font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
@@ -4362,17 +4362,17 @@ button[disabled] {
 }
 
 .btn-hover {
-    background: #2e8ece;
+    background: #409ad5;
     color: #fff
 }
 
 .btn:hover {
-    background: #2cc36b;
+    background: #409ad5;
     color: #fff
 }
 
 .btn:focus {
-    background: #2cc36b;
+    background: #409ad5;
     outline: 0
 }
 
@@ -4446,7 +4446,7 @@ button[disabled] {
 }
 
 .btn-success {
-    background-color: #27AE60 !important
+    background-color: #052882 !important
 }
 
 .btn-success:hover {
@@ -5178,7 +5178,7 @@ input[type="checkbox"][disabled] {
 
 .wy-switch.active:after {
     left: 24px;
-    background: #27AE60
+    background: #052882
 }
 
 .wy-switch.disabled {
@@ -5223,7 +5223,7 @@ input[type="checkbox"][disabled] {
 }
 
 .wy-inline-validate.wy-inline-validate-success .wy-input-context {
-    color: #27AE60
+    color: #052882
 }
 
 .wy-inline-validate.wy-inline-validate-danger .wy-input-context {
@@ -5617,7 +5617,7 @@ a.wy-text-info:hover {
 }
 
 .wy-text-success {
-    color: #27AE60 !important
+    color: #052882 !important
 }
 
 a.wy-text-success:hover {
@@ -6250,12 +6250,12 @@ article ol li ul li {
     position: absolute;
     width: 100%;
     height: 100%;
-    padding-top: 78px;
+    padding-top: 167px;
 }
 
 .wy-nav-side {
     position: fixed;
-    top: 78px;
+    top: 167px;
     bottom: 0;
     left: 0;
     padding-bottom: 2em;
@@ -6515,7 +6515,7 @@ footer span.commit .rst-content tt,
     text-align: right;
     font-size: 90%;
     cursor: pointer;
-    color: #27AE60;
+    color: #052882;
     *zoom: 1
 }
 
@@ -7185,7 +7185,7 @@ a .rst-content code {
 .rst-content .viewcode-link,
 .rst-content .viewcode-back {
     display: inline-block;
-    color: #27AE60;
+    color: #052882;
     font-size: 80%;
     padding-left: 24px
 }
@@ -7308,7 +7308,6 @@ header.header {
     bottom: auto;
     z-index: 10;
     width: 100vw;
-    padding: 20px 62.5px;
     background: #fff;
     z-index: 999;
     -webkit-transition: background-color 500ms ease;
@@ -7328,6 +7327,7 @@ header .header-container {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    padding: 20px 62.5px;
 }
 
 header .btns-container {
@@ -7572,7 +7572,7 @@ a:hover {
 }
 
 @media screen and (max-width: 1024px) {
-    header.header {
+    header .header-container {
         padding: 11.6px 62.5px;
     }
 
@@ -7606,7 +7606,7 @@ a:hover {
     }
 
     .wy-nav-side {
-        top: 50px;
+        top: 108px;
         transition: left .6s ease;
         z-index: 9999;
     }
@@ -7619,7 +7619,7 @@ a:hover {
         display: block !important;
         position: absolute;
         left: 20px;
-        top: 50%;
+        top: 75%;
         transform: translateY(-50%);
     }
 
@@ -7704,4 +7704,43 @@ a:hover {
         font-size: 14px;
         line-height: 18px;
     }
+}
+
+.header-bridgecrew{
+	border: 2px solid transparent;
+	background-color: #662eff;
+	background-image: linear-gradient(-231deg, #7a49ff 0%, #662eff 100%);
+}
+
+.header-bridgecrew .btns-container a{
+	font-family: 'Work Sans', sans-serif;
+	color: white;
+	background-color: transparent;
+	letter-spacing: 1.92px;
+	text-transform: uppercase;
+	line-height: 1.2em;
+	display: inline-block;
+	text-decoration: none;
+	transition: all 0.25s ease;
+	cursor: pointer;
+	font-size: 0.88em;
+	text-align: center;
+	font-weight: normal;
+	padding: 0.90em 2em;
+}
+
+.header-bridgecrew .btns-container .link{
+	
+}
+
+.header-bridgecrew .btns-container .btn{
+	border-radius: 25px;
+	border: 2px solid white;
+}
+
+@media screen and (max-width: 1024px){
+	
+	.header-bridgecrew .btns-container{
+		display: none;	
+	}
 }
