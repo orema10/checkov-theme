@@ -6250,12 +6250,12 @@ article ol li ul li {
     position: absolute;
     width: 100%;
     height: 100%;
-    padding-top: 167px;
+    padding-top: 128px;/*167px;*/
 }
 
 .wy-nav-side {
     position: fixed;
-    top: 167px;
+    top: 128px;/*167px;*/
     bottom: 0;
     left: 0;
     padding-bottom: 2em;
@@ -6455,7 +6455,8 @@ footer span.commit .rst-content tt,
     }
 
     .wy-nav-content-wrap .wy-nav-content {
-        padding: 1.618em
+        padding: 1.618em;
+        padding-top: 60px;
     }
 
     .wy-nav-content-wrap.shift {
@@ -7338,7 +7339,7 @@ header .btns-container {
 }
 
 header .image {
-    height: 35px;
+    height: 25px;
     max-width: 100%;
     vertical-align: middle;
     display: inline-block;
@@ -7707,12 +7708,23 @@ a:hover {
 }
 
 .header-bridgecrew{
-	border: 2px solid transparent;
+	border: 0px;
 	background-color: #662eff;
 	background-image: linear-gradient(-231deg, #7a49ff 0%, #662eff 100%);
+	line-height: 25px;	
+	color: white;
+	font-size: 14px;
 }
 
+.header-bridgecrew .header-container{
+	padding-top: 11.5px;
+	padding-bottom: 11.5px;
+}
+
+
+
 .header-bridgecrew .btns-container a{
+	/*
 	font-family: 'Work Sans', sans-serif;
 	color: white;
 	background-color: transparent;
@@ -7726,7 +7738,16 @@ a:hover {
 	font-size: 0.88em;
 	text-align: center;
 	font-weight: normal;
-	padding: 0.90em 2em;
+	padding: 0.90em 2em;*/
+	font-family: 'Work Sans', sans-serif;
+	border: 0px !important;
+	background-color: transparent;
+	border-radius: 0px;
+	box-shadow: none;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 25px;
+	padding: 0px 10px;
 }
 
 .header-bridgecrew .btns-container .link{
